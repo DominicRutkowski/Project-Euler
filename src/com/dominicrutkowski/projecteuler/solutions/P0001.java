@@ -4,6 +4,9 @@
  *
  * LICENSE:
  * https://github.com/DominicRutkowski/Project-Euler/blob/master/LICENSE
+ *
+ * PROBLEM:
+ * https://projecteuler.net/problem=1
  */
 
 package com.dominicrutkowski.projecteuler.solutions;

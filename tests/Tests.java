@@ -6,15 +6,15 @@
  * https://github.com/DominicRutkowski/Project-Euler/blob/master/LICENSE
  */
 
+import com.dominicrutkowski.projecteuler.solutions.*;
+
 import org.junit.Assert;
 import org.junit.Test;
-
-import com.dominicrutkowski.projecteuler.solutions.*;
 
 public final class Tests {
 
     @Test public void testP0001() {Assert.assertEquals("233168", new P0001().run());}
-//    @Test public void testP0002() {Assert.assertEquals("4613732", new P0002().run());}
+    @Test public void testP0002() {Assert.assertEquals("4613732", new P0002().run());}
 //    @Test public void testP0003() {Assert.assertEquals("6857", new P0003().run());}
 //    @Test public void testP0004() {Assert.assertEquals("906609", new P0004().run());}
 //    @Test public void testP0005() {Assert.assertEquals("232792560", new P0005().run());}
