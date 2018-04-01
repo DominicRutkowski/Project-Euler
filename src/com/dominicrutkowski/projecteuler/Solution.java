@@ -12,8 +12,6 @@ public abstract class Solution {
 
     public abstract String run();
 
-    public Solution() {
-        this.run();
-    }
+    public Solution() {}
 
 }

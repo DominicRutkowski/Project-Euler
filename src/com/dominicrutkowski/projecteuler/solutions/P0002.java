@@ -17,6 +17,8 @@ import java.util.ArrayList;
 
 public class P0002 extends Solution {
 
+    private static final int MAX = 4000000;
+
     @Override
     public String run() {
         ArrayList<Integer> fibonacciNumbers = new ArrayList<>();
@@ -24,7 +26,7 @@ public class P0002 extends Solution {
         fibonacciNumbers.add(2);
         int evenSum = 2;
         int next = 3;
-        while (next <= 4000000) {
+        while (next <= P0002.MAX) {
             fibonacciNumbers.add(next);
             if ((next & 1) == 0) {
                 evenSum += next;

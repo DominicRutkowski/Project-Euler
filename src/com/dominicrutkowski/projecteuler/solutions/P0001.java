@@ -15,10 +15,12 @@ import com.dominicrutkowski.projecteuler.Solution;
 
 public class P0001 extends Solution {
 
+    private static final int MAX = 1000;
+
     @Override
     public String run() {
         int sum = 0;
-        for (int i = 3; i < 1000; i++) {
+        for (int i = 3; i < P0001.MAX; i++) {
             sum += i % 3 == 0 || i % 5 == 0 ? i : 0;
         }
         return Integer.toString(sum);
