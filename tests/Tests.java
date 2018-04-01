@@ -30,7 +30,7 @@ public final class Tests {
 //    @Test public void testP0015() {Assert.assertEquals("137846528820", new P0015().run());}
 //    @Test public void testP0016() {Assert.assertEquals("1366", new P0016().run());}
 //    @Test public void testP0017() {Assert.assertEquals("21124", new P0017().run());}
-//    @Test public void testP0018() {Assert.assertEquals("1074", new P0018().run());}
+    @Test public void testP0018() {Assert.assertEquals("1074", new P0018().run());}
 //    @Test public void testP0019() {Assert.assertEquals("171", new P0019().run());}
 //    @Test public void testP0020() {Assert.assertEquals("648", new P0020().run());}
 //    @Test public void testP0021() {Assert.assertEquals("31626", new P0021().run());}
@@ -79,7 +79,7 @@ public final class Tests {
 //    @Test public void testP0064() {Assert.assertEquals("1322", new P0064().run());}
 //    @Test public void testP0065() {Assert.assertEquals("272", new P0065().run());}
 //    @Test public void testP0066() {Assert.assertEquals("661", new P0066().run());}
-//    @Test public void testP0067() {Assert.assertEquals("7273", new P0067().run());}
+    @Test public void testP0067() {Assert.assertEquals("7273", new P0067().run());}
 //    @Test public void testP0068() {Assert.assertEquals("6531031914842725", new P0068().run());}
 //    @Test public void testP0069() {Assert.assertEquals("510510", new P0069().run());}
 //    @Test public void testP0070() {Assert.assertEquals("8319823", new P0070().run());}
