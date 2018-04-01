@@ -20,7 +20,7 @@ public class P0004 extends Solution {
     @Override
     public String run() {
         int max = Integer.MIN_VALUE;
-        for (int i = 999; i >= 100; i--) {
+        for (int i = (int) Math.pow(10, MAX_DIGITS) - 1; i >= 100; i--) {
             for (int j = i; j >= 100; j--) {
                 if (i * j > max && isPalindromic(i * j)) {
                     max = i * j;
