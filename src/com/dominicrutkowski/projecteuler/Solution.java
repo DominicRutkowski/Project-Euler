@@ -8,8 +8,12 @@
 
 package com.dominicrutkowski.projecteuler;
 
-public interface Solution {
+public abstract class Solution {
 
-    String run();
+    public abstract String run();
+
+    public Solution() {
+        this.run();
+    }
 
 }
