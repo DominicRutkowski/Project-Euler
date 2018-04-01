@@ -18,13 +18,15 @@ import java.util.ArrayList;
 
 public class P0025 extends Solution {
 
+    private static final int DIGITS = 1000;
+
     @Override
     public String run() {
         ArrayList<BigInteger> fibonacciNumbers = new ArrayList<>();
         fibonacciNumbers.add(BigInteger.ONE);
         fibonacciNumbers.add(BigInteger.ONE);
         int index = 1;
-        while (fibonacciNumbers.get(index).toString().length() < 1000) {
+        while (fibonacciNumbers.get(index).toString().length() < DIGITS) {
             fibonacciNumbers.add(fibonacciNumbers.get(index).add(fibonacciNumbers.get(index - 1)));
             index++;
         }
