@@ -18,7 +18,7 @@ public final class Tests {
     @Test public void testP0003() {Assert.assertEquals("6857", new P0003().run());}
     @Test public void testP0004() {Assert.assertEquals("906609", new P0004().run());}
     @Test public void testP0005() {Assert.assertEquals("232792560", new P0005().run());}
-//    @Test public void testP0006() {Assert.assertEquals("25164150", new P0006().run());}
+    @Test public void testP0006() {Assert.assertEquals("25164150", new P0006().run());}
 //    @Test public void testP0007() {Assert.assertEquals("104743", new P0007().run());}
 //    @Test public void testP0008() {Assert.assertEquals("23514624000", new P0008().run());}
 //    @Test public void testP0009() {Assert.assertEquals("31875000", new P0009().run());}
