@@ -10,8 +10,18 @@ package com.dominicrutkowski.projecteuler;
 
 public abstract class Solution {
 
+    private String answer;
+
     public abstract String run();
 
-    public Solution() {}
+    public String getAnswer() {
+        System.out.println("Problem: " + this.getClass().getSimpleName().substring(1));
+        System.out.println("Answer: " + answer + "\n");
+        return answer;
+    }
+
+    public Solution() {
+        answer = this.run();
+    }
 
 }
