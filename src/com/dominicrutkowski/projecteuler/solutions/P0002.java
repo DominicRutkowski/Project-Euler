@@ -26,7 +26,7 @@ public class P0002 extends Solution {
         fibonacciNumbers.add(2);
         int evenSum = 2;
         int next = 3;
-        while (next <= P0002.MAX) {
+        while (next <= MAX) {
             fibonacciNumbers.add(next);
             if ((next & 1) == 0) {
                 evenSum += next;

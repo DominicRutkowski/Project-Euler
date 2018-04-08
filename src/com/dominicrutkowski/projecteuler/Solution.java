@@ -21,7 +21,7 @@ public abstract class Solution {
     }
 
     public Solution() {
-        answer = this.run();
+        answer = run();
     }
 
 }

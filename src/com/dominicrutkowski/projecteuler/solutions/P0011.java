@@ -44,11 +44,11 @@ public class P0011 extends Solution {
         int max = 0;
         for (int row = 0; row < GRID.length - ADJACENT_NUMBERS + 1; row++) {
             for (int col = 0; col < GRID[row].length - ADJACENT_NUMBERS + 1; col++) {
-                int highestNewProduct = Math.max(Math.max(rowProduct(row, col), columnProduct(row, col)),
-                                                 Math.max(mainDiagonalProduct(row, col), antiDiagonalProduct(row, col)));
-                if (highestNewProduct > max) {
-                    max = highestNewProduct;
-                }
+                int rowProduct = rowProduct(row, col);
+                int columnProduct = columnProduct(row, col);
+                int mainDiagonalProduct = mainDiagonalProduct(row, col);
+                int antiDiagonalProduct = antiDiagonalProduct(row, col);
+                max = Math.max(max, Math.max(Math.max(rowProduct, columnProduct), Math.max(mainDiagonalProduct, antiDiagonalProduct)));
             }
         }
         return Integer.toString(max);
