@@ -22,7 +22,7 @@ public final class Tests {
     @Test public void testP0007() {Assert.assertEquals("104743", new P0007().getAnswer());}
     @Test public void testP0008() {Assert.assertEquals("23514624000", new P0008().getAnswer());}
     @Test public void testP0009() {Assert.assertEquals("31875000", new P0009().getAnswer());}
-//    @Test public void testP0010() {Assert.assertEquals("142913828922", new P0010().getAnswer());}
+    @Test public void testP0010() {Assert.assertEquals("142913828922", new P0010().getAnswer());}
 //    @Test public void testP0011() {Assert.assertEquals("70600674", new P0011().getAnswer());}
 //    @Test public void testP0012() {Assert.assertEquals("76576500", new P0012().getAnswer());}
 //    @Test public void testP0013() {Assert.assertEquals("5537376230", new P0013().getAnswer());}
