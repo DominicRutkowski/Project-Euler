@@ -26,7 +26,7 @@ public class P0008 extends Solution {
             for (int j = 0; j < NUMBER_OF_DIGITS; j++) {
                 product *= Integer.parseInt(NUMBER.substring(i + j, i + j + 1));
             }
-            max = Long.max(max, product);
+            max = Math.max(max, product);
         }
         return Long.toString(max);
     }
