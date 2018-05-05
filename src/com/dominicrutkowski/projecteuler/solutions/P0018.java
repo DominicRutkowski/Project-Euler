@@ -15,7 +15,7 @@ import com.dominicrutkowski.projecteuler.Solution;
 
 public class P0018 extends Solution {
 
-    private static int[][] triangle = {
+    private static final int[][] TRIANGLE = {
         {75},
         {95,64},
         {17,47,82},
@@ -35,16 +35,15 @@ public class P0018 extends Solution {
 
     @Override
     public String run() {
-        for (int i = triangle.length - 2; i >= 0; i--) {
-            addMaxToNextRow(i + 1, i);
+        int row = TRIANGLE.length - 1;
+        int[] maximizedRow = TRIANGLE[row].clone();
+        while (row >= 1) {
+            for (int i = 0; i < row; i++) {
+                maximizedRow[i] = Math.max(maximizedRow[i], maximizedRow[i + 1]) + TRIANGLE[row - 1][i];
+            }
+            row--;
         }
-        return Integer.toString(triangle[0][0]);
-    }
-
-    private void addMaxToNextRow(int lowerRow, int upperRow) {
-        for (int i = 0; i <= upperRow; i++) {
-            triangle[upperRow][i] = triangle[upperRow][i] + Math.max(triangle[lowerRow][i], triangle[lowerRow][i + 1]);
-        }
+        return Integer.toString(maximizedRow[0]);
     }
 
 }
