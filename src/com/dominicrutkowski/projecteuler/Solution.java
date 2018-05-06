@@ -11,15 +11,19 @@ package com.dominicrutkowski.projecteuler;
 public abstract class Solution {
 
     private String answer;
-    private long time;
+    private long nanoTime;
 
     public abstract String run();
 
     public String getAnswer() {
         System.out.println("Problem: " + this.getClass().getSimpleName().substring(1));
         System.out.println("Answer: " + answer);
-        System.out.println("Time: " + time + " nanoseconds");
-        if (time > 60000000000L) {
+        final long seconds = (nanoTime / 1000000000);
+        final long milliseconds = (nanoTime / 1000000) - (seconds * 1000);
+        final long microseconds = (nanoTime / 1000) - (seconds * 1000000) - (milliseconds * 1000);
+        final long nanoseconds = nanoTime - (seconds * 1000000000) - (milliseconds * 1000000) - (microseconds * 1000);
+        System.out.println("Time: " + seconds + "s " + milliseconds + "ms " + microseconds + "μs " + nanoseconds + "ns");
+        if (nanoTime > 60000000000L) {
             System.out.println("WARNING: Calculation time exceeds one minute.");
         }
         System.out.println();
@@ -29,8 +33,7 @@ public abstract class Solution {
     public Solution() {
         final long startTime = System.nanoTime();
         answer = run();
-        final long stopTime = System.nanoTime();
-        time = stopTime - startTime;
+        nanoTime = System.nanoTime() - startTime;
     }
 
 }
