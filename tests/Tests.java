@@ -124,7 +124,7 @@ public final class Tests {
 //    @Test public void testP0109() { Assert.assertEquals("38182", new P0109().getAnswer()); }
 //    @Test public void testP0110() { Assert.assertEquals("9350130049860600", new P0110().getAnswer()); }
 //    @Test public void testP0111() { Assert.assertEquals("612407567715", new P0111().getAnswer()); }
-//    @Test public void testP0112() { Assert.assertEquals("1587000", new P0112().getAnswer()); }
+    @Test public void testP0112() { Assert.assertEquals("1587000", new P0112().getAnswer()); }
 //    @Test public void testP0113() { Assert.assertEquals("51161058134250", new P0113().getAnswer()); }
 //    @Test public void testP0114() { Assert.assertEquals("16475640049", new P0114().getAnswer()); }
 //    @Test public void testP0115() { Assert.assertEquals("168", new P0115().getAnswer()); }
