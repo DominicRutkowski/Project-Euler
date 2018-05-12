@@ -6,7 +6,7 @@
  * https://github.com/DominicRutkowski/Project-Euler/blob/master/LICENSE
  *
  * PROBLEM:
- * https://projecteuler.net/problem=15
+ * https://projecteuler.net/problem=20
  */
 
 package com.dominicrutkowski.projecteuler.solutions;
@@ -15,14 +15,18 @@ import com.dominicrutkowski.projecteuler.Solution;
 
 import java.math.BigInteger;
 
-public class P0015 extends Solution {
+public class P0020 extends Solution {
 
-    private static final int M = 20;
-    private static final int N = 20;
+    private static final int N = 100;
 
     @Override
     public String run() {
-        return combination(M + N, M).toString();
+        String total = factorial(100).toString();
+        int sum = 0;
+        for (int i = 0; i < total.length(); i++) {
+            sum += Integer.parseInt(total.substring(i, i + 1));
+        }
+        return Integer.toString(sum);
     }
 
     private BigInteger factorial(int n) {
@@ -31,10 +35,6 @@ public class P0015 extends Solution {
             total = total.multiply(BigInteger.valueOf(i));
         }
         return total;
-    }
-
-    private BigInteger combination(int n, int r) {
-        return factorial(n).divide(factorial(r).multiply(factorial(n - r)));
     }
 
 }
