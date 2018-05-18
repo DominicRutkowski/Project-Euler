@@ -22,7 +22,7 @@ public class P0016 extends Solution {
     @Override
     public String run() {
         int sum = 0;
-        String number = BigInteger.TWO.pow(EXPONENT).toString();
+        String number = BigInteger.valueOf(2).pow(EXPONENT).toString();
         for (int i = 0; i < number.length(); i++) {
             sum += Integer.parseInt(number.substring(i, i + 1));
         }
