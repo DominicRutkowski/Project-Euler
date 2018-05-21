@@ -60,7 +60,9 @@ public class P0179 extends Solution {
             }
         }
         int factors = 1;
-        primeFactorization.forEach((factor, exponent) -> factors += exponent + 1);
+        for (int exponent : primeFactorization.values()) {
+            factors *= exponent + 1;
+        }
         return factors;
     }
 
