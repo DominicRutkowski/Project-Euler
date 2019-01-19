@@ -60,7 +60,7 @@ public final class Tests {
 //    @Test public void testP0045() { Assert.assertEquals("1533776805", new P0045().getAnswer()); }
 //    @Test public void testP0046() { Assert.assertEquals("5777", new P0046().getAnswer()); }
 //    @Test public void testP0047() { Assert.assertEquals("134043", new P0047().getAnswer()); }
-//    @Test public void testP0048() { Assert.assertEquals("9110846700", new P0048().getAnswer()); }
+    @Test public void testP0048() { Assert.assertEquals("9110846700", new P0048().getAnswer()); }
 //    @Test public void testP0049() { Assert.assertEquals("296962999629", new P0049().getAnswer()); }
 //    @Test public void testP0050() { Assert.assertEquals("997651", new P0050().getAnswer()); }
 //    @Test public void testP0051() { Assert.assertEquals("121313", new P0051().getAnswer()); }
@@ -191,7 +191,7 @@ public final class Tests {
 //    @Test public void testP0176() { Assert.assertEquals("96818198400000", new P0176().getAnswer()); }
 //    @Test public void testP0177() { Assert.assertEquals("129325", new P0177().getAnswer()); }
 //    @Test public void testP0178() { Assert.assertEquals("126461847755", new P0178().getAnswer()); }
-    @Test public void testP0179() { Assert.assertEquals("986262", new P0179().getAnswer()); }
+//    @Test public void testP0179() { Assert.assertEquals("986262", new P0179().getAnswer()); }
 //    @Test public void testP0180() { Assert.assertEquals("285196020571078987", new P0180().getAnswer()); }
 //    @Test public void testP0181() { Assert.assertEquals("83735848679360680", new P0181().getAnswer()); }
 //    @Test public void testP0182() { Assert.assertEquals("399788195976", new P0182().getAnswer()); }
